@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+</head>
+<body>
+
+    <h2>Enter Your Comment here</h2>
+
+    <div id="comment-box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae et obcaecati, eaque voluptas, aliquid quia veniam quos voluptatem, praesentium incidunt ratione tenetur nostrum odit nihil deserunt perferendis eius neque dicta. Sed commodi consequuntur, nisi enim optio nulla ullam atque mollitia molestias dignissimos aliquid vitae quasi provident necessitatibus illo alias! Odit eligendi ipsam nam dolores? Maxime cum est excepturi nostrum dolor odit tenetur maiores facilis, aut deserunt sequi quam ut. Quisquam.</p>
+        <p>Facilis quaerat porro officia fuga nobis labore, at ex maxime tempore delectus illum velit eligendi numquam pariatur aliquam distinctio eveniet error beatae? Repellat maxime aliquid, laboriosam molestiae eum quod officiis ducimus esse, officia beatae quisquam exercitationem sed perspiciatis architecto natus facilis corporis saepe. Vitae ex totam ab fugit odio velit! Eveniet quis velit architecto perspiciatis quos doloribus, ut aliquid voluptatum ex commodi reprehenderit quaerat nemo corrupti, quod pariatur quia? Optio.</p>
+        <p>Fugiat, eveniet. Consequuntur beatae sint facilis dicta inventore quia? Harum, consequuntur vero illo commodi perspiciatis illum id dignissimos sit rerum sed quos repellendus voluptas autem, tenetur numquam maiores aliquid, praesentium at officiis dicta odio ipsum unde veritatis dolor. Ducimus est minima nam, ut eos corporis praesentium magni sit sapiente quo! Totam asperiores eius vitae, id laboriosam vero perspiciatis sit inventore accusamus, libero dolorem ex deleniti eaque quae incidunt veritatis cum!</p>
+    </div>
+    <div>
+        <textarea id="comment-text" cols="60" rows="5"></textarea>
+        <br>
+        <button id="post-btn">Post</button>
+    </div>
+    <script>
+        document.getElementById('post-btn').addEventListener('click' , function(){
+
+
+            const commentText = document.getElementById('comment-text').value;
+
+            const newComment = document.createElement('p');
+
+            newComment.innerText = commentText;
+
+            document.getElementById('comment-box').appendChild(newComment);
+
+            document.getElementById('comment-text').value = '';
+
+
+        })
+    </script>
+</body>
+</html>
